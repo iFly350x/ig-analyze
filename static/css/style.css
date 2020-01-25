@@ -1,0 +1,50 @@
+
+#logo
+{
+	color: cyan;
+}
+
+#nav_home:hover
+{
+	color: cyan;
+}
+
+/*
+h3{
+	padding: absolute;
+	padding-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: transparent;
+	letter-spacing: 3px;
+}
+
+h3:before
+{
+	content: attr(data-text);
+	position: absolute;
+	padding-top: 20px;
+	width: 100%;
+	height: 100%;
+	color: #18ffff;
+	overflow: hidden;
+	border-right: 1px solid #18ffff;
+	animation: type 10s steps(49) infinite;
+	white-space: nowrap;
+
+}
+
+@keyframes type
+{
+	0%
+		{
+			width: 0;
+		}
+	50%
+	{
+		width: 100%
+	}
+	100%{
+		width: 0;
+	}
+}*/

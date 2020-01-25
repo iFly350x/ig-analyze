@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style_base.css') }}">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style_index.css') }}">
+
+{% endblock style %}
+
+
+{% block form %}
+
+<div class="main">
+
+<!-- <div id="caption">
+	<span class="text">Try Our Instgram Profile Analyzer</span>
+	<span class="type-cursor"> | </span>
+</div> -->
+
+<div class="container">
+<form action="#" method="post">
+        <input type="text" placeholder="Enter Instgram Profile Name" name="nm">
+        <button class="btn pulse waves-effect waves-light cyan " type="submit" name="action">Serach</button>
+</form>
+</div>
+</div>
+
+{% endblock form %}

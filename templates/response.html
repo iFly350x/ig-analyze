@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block style %}
+
+<link rel="stylesheet" href="style_base.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style_response.css/') }}">
+
+{% endblock style %}
+
+
+
+{% block data %}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for msg in messages %}
+<p>{{msg}}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+<p class="statistics_name">Statistics For {{name}}:</p>
+
+ <table class="highlight centered" >
+        <thead>
+          <tr>
+              <th>Number of Followers</th>
+              <th>Number Following</th>
+              <th>Number of Posts</th>
+              <th>Total Number of Likes</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>{{followers}}</td>
+            <td>{{following}}</td>
+            <td>{{posts}}</td>
+            <td>{{likes}}</td>
+          </tr>
+         </tbody>
+     </table>
+
+
+{% endblock data %}

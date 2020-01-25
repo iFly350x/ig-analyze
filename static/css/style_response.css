@@ -1,0 +1,40 @@
+body{
+	padding: 0;
+	margin: 0;
+	background: url(/static/css/background2.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 1000px;
+}
+
+th
+{
+	color: #00c853;
+}
+
+td{
+	color: #00e676 ;
+}
+
+
+.statistics_name
+{
+	font-size: 37px;
+	color:#1de9b6;
+	text-align: center;
+}
+
+p{
+	color: #c2185b;
+	font-size: 24px;
+	padding-left: 20px;
+}
+
+#logo
+{
+	color: cyan;
+}
+.statistics_name:hover
+{
+	color:  #c2185b;
+}

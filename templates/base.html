@@ -1,0 +1,35 @@
+<html>
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    {% block style %}
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    {% endblock style %}
+    
+  {% block title %}
+        {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title>Default Home</title>
+    {% endif %}
+        {% endblock  %}
+</head>
+
+
+<body>
+<nav class="nav-wrapper transparent ">
+    <div class="container">
+    <a href="#" class="brand-logo center">Insta <span id="logo" >Analyzer</span></a>
+    <ul>
+        <li class="active" id="nav_home" ><a href="/">Home</a></li>
+    </ul>
+        </div>
+</nav>
+
+{% block form %}
+{% endblock form %}
+{% block data %}
+{% endblock data %}
+
