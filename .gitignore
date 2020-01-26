@@ -1,1 +1,2 @@
-env
+env.egg-info
+dist
